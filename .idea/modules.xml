@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/tirvia-web-service.iml" filepath="$PROJECT_DIR$/.idea/tirvia-web-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../StageEmendis/projects/trivia-web-client-angular/.idea/trivia-web-client-angular.iml" filepath="$PROJECT_DIR$/../../../StageEmendis/projects/trivia-web-client-angular/.idea/trivia-web-client-angular.iml" />
+    </modules>
+  </component>
+</project>
