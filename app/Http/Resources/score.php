@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class Game extends JsonResource
+class score extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -16,9 +16,11 @@ class Game extends JsonResource
     {
         return [
             'id' => $this->id,
-            'game_name' => $this->game_name,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at
+            'player_name' =>$this->player_name,
+            'game_name' =>$this->game_name,
+            'score' =>$this->score,
+            'created_at'=>$this->created_at,
+            'updated_at'=>$this->updated_at
         ];
     }
 }

@@ -8,5 +8,5 @@ use phpDocumentor\Reflection\DocBlock\Tags\Property;
 
 class Player extends Model
 {
-    protected $fillable = ['name', 'answers', 'points'];
+    protected $fillable = ['id', 'player_name'];
 }

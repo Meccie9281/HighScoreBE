@@ -34,7 +34,8 @@ class PlayerController extends Controller
 
     public function update($id, Request $request)
     {
-        return Player::query()->where('id', $id)->update($request->all());
+        Player::query()->findOrFail($id)->update($request->all());
+        return $this->index();
     }
 
 

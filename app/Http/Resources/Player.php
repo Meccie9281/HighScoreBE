@@ -16,9 +16,7 @@ class Player extends JsonResource
     {
         return [
             'id' => $this->id,
-            'name' => $this->name,
-            'answers' => (int) $this->answers,
-            'points' => (int) $this->points,
+            'player_name' => $this->player_name,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at
         ];
