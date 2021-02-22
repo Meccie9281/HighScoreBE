@@ -27,6 +27,7 @@ Route::get('/scores', [\App\Http\Controllers\scorecontroller::class, 'index']);
 Route::get('/scores/{id}', [\App\Http\Controllers\scorecontroller::class, 'show']);
 Route::post('/scores', [\App\Http\Controllers\scorecontroller::class, 'store']);
 Route::post('/scores/update/{id}', [\App\Http\Controllers\scorecontroller::class, 'update']);
+Route::post('/scores/updatewhole/{id}', [\App\Http\Controllers\scorecontroller::class, 'updateWhole']);
 Route::delete('/scores/delete/{id}', [\App\Http\Controllers\scorecontroller::class, 'delete']);
 
 Route::get('/games', [\App\Http\Controllers\GameController::class, 'index']);

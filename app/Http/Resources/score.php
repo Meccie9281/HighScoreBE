@@ -16,7 +16,9 @@ class score extends JsonResource
     {
         return [
             'id' => $this->id,
+            'player_id'=>$this->player_id,
             'player_name' =>$this->player_name,
+            'game_id'=>$this->game_id,
             'game_name' =>$this->game_name,
             'score' =>$this->score,
             'created_at'=>$this->created_at,

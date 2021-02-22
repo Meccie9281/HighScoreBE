@@ -46,12 +46,21 @@ class scorecontroller extends Controller
         return $this->getScores();
     }
 
-    private function getScores(){
+    public function updateWhole($id, Request $request){
+        $score = scores::find($id);
+        $score->score = $request->score;
+        $score->save();
+        Player::find($score->player_id)->update($request->all());
+        Game::find($score->game_id)->update($request->all());
+        return $this->getScores();
+    }
+
+    private function getScores()
+    {
         return new scoreCollection(
             scores::query()->select("scores.id", "players.player_name", "games.game_name", "score")->from("scores")
                 ->join("games", "games.id", "=", "game_id")
                 ->join("players", "players.id", "=", "player_id")
                 ->get());
     }
-
 }
